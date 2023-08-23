@@ -2,18 +2,27 @@
 <footer class="bg-dark footer-section">
   <div class="section">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-md-4">
           <h5 class="text-light">Email</h5>
           <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.email }}</p>
         </div>
-        <div class="col-md-4">
+        <!-- <div class="col-md-4">
           <h5 class="text-light">Phone</h5>
           <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.phone }}</p>
+        </div> -->
+        <div class="col-md-4">
+          <h5 class="text-light">Based in</h5>
+          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.address }}</p>
         </div>
         <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.address }}</p>
+          <h5 class="text-light">Socials</h5>
+          <!-- <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.address }}</p> -->
+          <ul class="list-unstyled row align-items-center">
+          {% for social in site.data.settings.social %}
+    <li class="col-2"><a class="text-white" href="{{ social.link }}"><p class="{{ social.icon }} text-white paragraph-lg" ></p></a></li>
+    {% endfor %}
+  </ul>
         </div>
       </div>
     </div>
