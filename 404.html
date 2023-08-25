@@ -9,7 +9,13 @@ permalink: /404.html
     <div class="col col-12" style="text-align: center">
       <h2>404</h2>
       <p>The requested page could not be found.</p>
-      <p><a href="{{site.baseurl}}/">Back to the bLog</a></p>
+      <!-- <div class="alert alert-info" role="alert"> -->
+
+      <p class="text-muted">You will be redirected <a href="{{site.baseurl}}/" style="font-weight: bold;">Home</a> in 3 seconds  <span class="spinner-border text-primary spinner-border-sm align-self-center" role="status">
+        </span>
+      </p>
+<!-- </div> -->
     </div>
   </div>
 </div>
+<meta http-equiv="refresh" content="3; url={{site.baseurl}}/">

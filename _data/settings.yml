@@ -9,7 +9,7 @@ description: Hi, I'm Jacob A passionate Programmer and games developer with a ke
 email: lune_tapper_0n@icloud.com
 phone: +880 2544 658 256
 address: Queensland, Australia
-copyright: Copyright &copy; 2023 Theme by [Themefisher](https://themefisher.com) & Developed by [Jacob Mckenzie](/)
+copyright: Copyright &copy; 2023 Theme by [Themefisher](https://themefisher.com) & Adapted by [Jacob Mckenzie](/)
 
 menu:
   - { name: About, link: "/about" }
@@ -57,15 +57,15 @@ blurb-btn-name: More About Me
 work-process:
   - title: "Gamification"
     icon: "assets/images/icons/design.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "From adding minor engagement additive elements to ground up builds, gamification is my greatest area of interest."
 
   - title: "Software Development"
     icon: "assets/images/icons/plan.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Having started purely in software development for windows under .Net I have a wide range of skill and experience in developing full stack software applications on many popular platforms, including for mobile, windows and the web. "
 
   - title: "UI/UX Design"
     icon: "assets/images/icons/print.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Without effective UX and visually acceptable UI no piece of consumer software will live up to it’s full potential, which is why I strive in these areas to ensure that developed solutions and designs are both beautiful and effectively communicated. "
 
 # My Team Section
 # team:
@@ -86,10 +86,10 @@ work-process:
 
 skills-title: Skills
 skills:
-  - { name: Web Design, color: "#fdb157", value: "90%" }
-  - { name: Logo Design, color: "#9473e6", value: "60%" }
-  - { name: After Effects, color: "#bdecf6", value: "80%" }
-  - { name: Web App, color: "#ffbcaa", value: "70%" }
+  - { name: C# programming, color: "#fdb157", value: "90%" }
+  - { name: Web Apps, color: "#9473e6", value: "60%" }
+  - { name: Photoshop, color: "#bdecf6", value: "80%" }
+  - { name: JavaScript, color: "#ffbcaa", value: "70%" }
 
 #-------------------------------
 # Exprerience Section
@@ -97,22 +97,22 @@ skills:
 experience-title: Experience
 experience:
   - {
-      name: Junior UX Designer,
+      name: Laborer,
       icon: "icon-1.png",
-      date: "Jan 2007 - Feb 2009",
-      organization: "WEBEX",
+      date: "Feb 2018 - Sep 2023",
+      organization: "Ipswich Metal Recycling",
     }
   - {
-      name: UX & UI Designer,
+      name: Secretary,
       icon: "icon-2.png",
-      date: "Mar 2009 - Aug 2014",
-      organization: "AUGMEDIX",
+      date: "Oct 2022 - Present",
+      organization: "QUT Anime And Manga",
     }
   - {
-      name: Senior UI Designer,
+      name: IT Manager,
       icon: "icon-3.png",
-      date: "Sep 2014 - Present",
-      organization: "THEMEFISHER",
+      date: "Sep 2019 - Present",
+      organization: "Ipswich Metal Recycling",
     }
 
 #-------------------------------
@@ -121,24 +121,24 @@ experience:
 education-title: Education
 education:
   - {
-      name: Marters in UX Design,
-      date: "2006",
-      organization: "Masassusets Institute of Technology",
+      name: Bachelor of IT (Computer Science) Distinction,
+      date: "2021",
+      organization: "Queensland University Of Technology (QUT)",
     }
   - {
-      name: Honours in Fine Arts,
-      date: "2004",
-      organization: "Harvard University",
+      name: Certificate II in Business & skills for work,
+      date: "2015",
+      organization: "Bremer state High School",
     }
   - {
-      name: Higher Secondary Certificat,
-      date: "2000",
-      organization: "Cardiff School",
+      name: Bachelor of Games & Interactive Systems (software),
+      date: "2023 (expected)",
+      organization: "Queensland University Of Technology (QUT)",
     }
   - {
-      name: Secondary School Certificate,
-      date: "1998",
-      organization: "Cardiff School",
+      name: Certificate of Education,
+      date: "2017",
+      organization: "Bremer state High School",
     }
 
 #-------------------------------
@@ -147,21 +147,21 @@ education:
 services-title: Services
 services:
   - {
-      name: UI Design,
+      name: UI/UX Design,
       icon: ti-palette,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      description: "Without effective UX and visually acceptable UI no piece of consumer software will live up to it’s full potential, which is why I strive in these areas to ensure that developed solutions and designs are both beautiful and effectively communicated.",
       active: ,# Add true to select section
     }
   - {
-      name: UX Design,
+      name: Software Development,
       icon: ti-vector,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      description: "Having started purely in software development for windows under .Net I have a wide range of skill and experience in developing full stack software applications on many popular platforms, including for mobile, windows and the web.",
       active: true, # Add true to select section
     }
   - {
-      name: Interaction Design,
+      name: Gamification,
       icon: ti-panel,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      description: "From adding minor engagement additive elements to ground up builds, gamification is my greatest area of interest.",
       active: ,# Add true to select section
     }
 
@@ -264,34 +264,46 @@ testimonial-items:
 # Client Slider Section
 
 client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
+  - logo: "assets/images/tools-logo/logo-1.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-2.png"
+  - logo: "assets/images/tools-logo/logo-2.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-3.png"
+  - logo: "assets/images/tools-logo/logo-3.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-4.png"
+  - logo: "assets/images/tools-logo/logo-4.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-5.png"
+  - logo: "assets/images/tools-logo/logo-5.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-1.png"
+  - logo: "assets/images/tools-logo/logo-6.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-2.png"
+  - logo: "assets/images/tools-logo/logo-7.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-3.png"
+  - logo: "assets/images/tools-logo/logo-8.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-4.png"
+  - logo: "assets/images/tools-logo/logo-9.png"
     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-5.png"
+  - logo: "assets/images/tools-logo/logo-10.png"
+    url: "#"
+  - logo: "assets/images/tools-logo/logo-11.png"
+    url: "#"
+  - logo: "assets/images/tools-logo/logo-12.png"
+    url: "#"
+  - logo: "assets/images/tools-logo/logo-13.png"
+    url: "#"
+  - logo: "assets/images/tools-logo/logo-14.png"
+    url: "#"
+  - logo: "assets/images/tools-logo/logo-15.png"
+    url: "#"
+  - logo: "assets/images/tools-logo/logo-16.png"
     url: "#"
 
 #-------------------------------
