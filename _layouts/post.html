@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <!-- page title -->
 <section class="page-title bg-primary position-relative">
@@ -36,8 +37,11 @@ layout: default
     </div>
   </div>
 </section>
-
-{% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+{% if page.comments %}
+  {% if site.data.settings.disqus-identifier %} 
+    {% include disqus-comments.html %} 
+  {% endif %}
+{%endif%}
 
 <!-- blog -->
 <section class="section">

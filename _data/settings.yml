@@ -29,7 +29,7 @@ google-analytics: # UA-XXXXXX-X
 #-------------------------------
 # Comment Section (Disqus)
 
-disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: portfoliosite-5 # Add your shortname for Disqus Comment. For example mr-brown
 
 #-------------------------------
 # Hero Section
@@ -245,20 +245,20 @@ portfolio-items:
 # Testimonials Section
 
 testimonial-items:
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  - name: "Micorsoft .Net"
+    image: "assets/images/testimonial/microsoft-logo.png"
+    designation: "C#,F#,Xamirin,WPF, Visual Studio"
+    content: "Being one of the frameworks I have delt with the longest, I have developed an array of skill in Microsoft’s primary developer tools, including the <strong>C#</strong> and <strong>F#</strong> languages, <strong>Windows Presentation Framework</strong>, <strong>Visual Studio IDE</strong> and <strong>Xamarin</strong> Cross platform development toolkit."
 
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  - name: "Adobe Creative Suite"
+    image: "assets/images/testimonial/adobe-cc-logo.png"
+    designation: "Photoshop, Illustrator"
+    content: "Another of my early passions, creating art and animations in Photoshop has led my developing of skill in its usage, professionally I have utilised these skills both for <strong>web vector asset design and media design (flyers, posters, banners, etc.)</strong> in my Secretarial position. This has included developing <strong>guides and templated workflows</strong> for delegate tasks, while maintaining quality of output."
 
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  - name: "Web Technologies"
+    image: "assets/images/testimonial/web-logo.png"
+    designation: "HTML, CSS, JS, React, Node.JS, Bootstrap, Flask, AWS, Azure, Docker, webRTC, redis, mySQL"
+    content: "I have a wide range of web skills, surrounding the full web stack, with <strong>design to deploy</strong> experience using <strong>Flask, docker & Node.JS</strong>, of <strong>restful APIs, Client server applications and statically built sites</strong>. Utilising <strong>AWS</strong> and <strong>Azure</strong> cloud services for backup/restore, load balancing and multi-stage redundancy. My current interests lie in the potential of <strong>webrtc</strong> for long term, low-cost fast turnaround of interactive time critical networked web applications."
 
 #-------------------------------
 # Client Slider Section
@@ -304,6 +304,8 @@ client-slider-items:
   - logo: "assets/images/tools-logo/logo-15.png"
     url: "#"
   - logo: "assets/images/tools-logo/logo-16.png"
+    url: "#"
+  - logo: "assets/images/tools-logo/logo-17.png"
     url: "#"
 
 #-------------------------------
