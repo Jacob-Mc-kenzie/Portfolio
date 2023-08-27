@@ -78,12 +78,12 @@
     obj.style.left =
       left -
       ((mouseX - (parseInt(obj.offsetWidth) / 2 + left)) / containerWidth) *
-        speed +
+      speed +
       "px";
     obj.style.top =
       top -
       ((mouseY - (parseInt(obj.offsetHeight) / 2 + top)) / containerHeight) *
-        speed +
+      speed +
       "px";
   }
   /* ########################################### /hero parallax ############################################## */
@@ -102,15 +102,16 @@
   $(".client-logo-slider").slick({
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
+    autoplaySpeed: 2000,
     dots: false,
     arrows: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
@@ -124,14 +125,14 @@
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -154,3 +155,5 @@
     }
   });
 })(jQuery);
+
+

@@ -8,7 +8,9 @@
   
   <!-- theme meta -->
   <meta name="theme-name" content="kross-jekyll" />
-
+  <meta name="theme-color" 
+  content="#41228e" 
+  media="(prefers-color-scheme: dark)">
     
   {% if site.author %}
   <meta name="author" content="{{ . }}">
@@ -23,8 +25,8 @@
   <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url}} " type="image/x-icon">
-  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url}} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
+  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
 
   <!-- google analytics -->
   {% if site.data.settings.google-analytics %}

@@ -26,22 +26,55 @@ layout: default
     <div class="row">
       <div class="col-lg-12">
         <h3 class="font-tertiary mb-5">{{ page.title | escape }}</h3>
-        <p class="font-secondary">Published on {{ page.date | date: '%b %d, %Y' }} by <span class="text-primary">{{ page.author }}</span
-            class="text-primary"> in <span>{{ page.tags[0] }}</span>{% for tag in page.tags offset:1 %},<span> {{ tag }}</span>{% endfor %}</p>
+        <p class="font-secondary">Published on {{ page.date | date: '%b %d, %Y' }} by <span class="text-primary">{{
+            page.author }}</span class="text-primary"> with tags: <span>{{ page.tags[0] }}</span>{% for tag in page.tags
+          offset:1 %},<span> {{ tag }}</span>{% endfor %}</p>
         <div class="content">
-          <img src="{{page.image | relative_url }}" class="img-fluid rounded float-left mr-5 mb-4" alt="{{page.title}}" style="max-width: 30%;">
+          <img src="{{page.image | relative_url }}" class="img-fluid rounded float-left mr-5 mb-4" alt="{{page.title}}"
+            style="max-width: 30%;">
           {{ content }}
         </div>
       </div>
     </div>
     {% include lightbox-section.html %}
+    <div class="row">
+      <div class="col">
+
+        <div class="row justify-content-center">
+          <h3 class="section-title ">Access This Project</h3>
+        </div>
+        <div class="row justify-content-around">
+          {%if page.demos %}
+          {%assign demoss = page.demos | split: ' '%}
+          {%for demo in demoss%}
+          <a href="{{'/assets/demos/' | append: demo | relative_url}}" target="_blank" rel="noopener noreferrer"
+            role="button" class="btn btn-primary  btn-lg align-self-center">
+            {{demo}}<span class="ti-new-window" style="min-width: 7rem;margin-left: 2rem;"></span></a>
+          {%endfor%}
+          {%else%}
+          {%if page.play %}
+          <a href="{{page.play | relative_url}}" role="button" class="btn btn-primary  btn-lg align-self-center">
+            Play<span class="ti-microsoft-alt" style="min-width: 7rem;margin-left: 2rem;"></span></a>
+          {%endif%}
+          {%if page.download%}
+          <a href="{{page.download}}" role="button" class="btn btn-primary  btn-lg align-self-center">
+            Download<span class="ti-microsoft-alt" style="min-width: 7rem;margin-left: 2rem;"></span></a>
+          {%endif%}
+          <a href="{{page.source}}" target="_blank" rel="noopener noreferrer" role="button"
+            class="btn btn-primary  btn-lg align-self-center">
+            Source<span class="ti-github" style="min-width: 7rem;margin-left: 2rem;"></span></a>
+        </div>
+      </div>
+      {%endif%}
+
+    </div>
   </div>
 </section>
 
 {% if page.comments %}
-  {% if site.data.settings.disqus-identifier %} 
-    {% include disqus-comments.html %} 
-  {% endif %}
+{% if site.data.settings.disqus-identifier %}
+{% include disqus-comments.html %}
+{% endif %}
 {%endif%}
 
 <!-- blog -->
@@ -49,10 +82,10 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Similar Stories</h2>
+        <h2 class="section-title">Recent Projects</h2>
       </div>
-      {% for post in site.posts offset:0 limit:3 %}
-      {% include post.html %}
+      {% for project in site.projects offset:0 limit:3 %}
+      {% include project.html %}
       {% endfor %}
     </div>
   </div>

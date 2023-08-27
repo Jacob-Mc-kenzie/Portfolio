@@ -1,31 +1,52 @@
 <!-- LIghtbox section -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <style>
-    #lightbox .row{
-        margin: 2rem;
-    }
+  #lightbox .row {
+    /* margin: 2rem; */
+  }
+  #lightbox .row a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 </style>
 
 <section id="lightbox" class="section" style="padding-top: 40px;">
-    <div class="container">
-        <div class="col-12 text-center">
-            <h3 class="section-title" style="margin-bottom: 40px;">Gallery</h2>
-          </div>
-        {% assign image_files = site.static_files | where: "path", contains page.assetDir %}
-        <p>{{image_files | size}} : {{page.assetDir}}</p>
-        {% assign rows = image_files | size | devided_by: 3.0 | ceil %}
-        {% for r in (1..rows)%}
-        <div class="row">
-            {% for asset in image_files limit: 3 offset: continue %}
-            <p>{{asset.path}}</p>
-            <a href="https://unsplash.it/600.jpg?image=251" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-              </a>
-            {%endfor%}
-        </div>
-        {%endfor%}
-        <!-- <div class="row">
+  <div class="container">
+    <div class="col-12 text-center">
+      <h3 class="section-title" style="margin-bottom: 40px;">Gallery</h2>
+    </div>
+
+    {% assign image_files = site.static_files | where_exp: "i", "i.path contains page.assetDir" %}
+
+    {% assign rows = image_files | size | divided_by: 3.0 | ceil %}
+    {%assign off = 0 %}
+    <!-- {% for r in (1..rows)%}
+    <div class="row">
+      {% assign off = off | plus: 1 | times: r  | minus: 1%}
+      {% for i in image_files limit: 3 offset: off | minus: 1 %}
+
+      <a href="{{asset.path | relative_url}}" data-toggle="lightbox" data-gallery="mixedgallery" class="col-md-4">
+        <img src="{{asset.path | relative_url}}" class="img-fluid rounded">
+      </a>
+      {%endfor%}
+    </div>
+    {%endfor%} -->
+      {%assign length = image_files | size%}
+      {%assign rowc = 1 %}
+      <div class="row">
+      {%for image in image_files%}
+      <!-- {%if false %}
+      </div>
+      <div class="row">
+      {%endif%} -->
+      <!-- <p>{{rowc}}</p> -->
+      <a href="{{image.path | relative_url}}" data-toggle="lightbox" data-gallery="mixedgallery" class="col-md-4">
+        <img src="{{image.path | relative_url}}" class="img-fluid rounded">
+      </a>
+      {% assign rowc = rowc | plus: 1 %}
+      {%endfor%}
+      </div>
+    
+    <!-- <div class="row">
             <a href="#" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
               <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
             </a>
@@ -46,10 +67,6 @@
             <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
               <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
             </a> -->
-    </div>
-    <script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});</script>
-</section>
+  </div>
 
+</section>

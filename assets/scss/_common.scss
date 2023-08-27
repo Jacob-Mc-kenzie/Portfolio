@@ -272,3 +272,11 @@ textarea.form-control{
   }
 }
 /* /card */
+
+// footer on hover
+footer a{
+  transition: 0.3s ease;
+  &:hover{
+    color:$text-color-light !important;
+  }
+}

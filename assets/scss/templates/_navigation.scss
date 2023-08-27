@@ -1,3 +1,8 @@
+
+#hImg{
+  max-height: 4rem;
+  transition: .3s ease;
+}
 .navigation{
   padding: 40px 130px;
   transition: .3s ease;
@@ -6,14 +11,26 @@
     padding: 15px 100px;
     @include desktop {
       padding: 15px 20px;
+      
     }
   }
   @include desktop {
     padding: 20px;
+    #hImg{
+      max-height: 3rem;
+    }
+    // background: $primary-color;
+  }
+}
+.bg-colored{
+  background: $primary-color;
+}
+
+.navbar-collapse.show{
+  &nav{
     background: $primary-color;
   }
 }
-
 .navbar{
   .nav-item{
     .nav-link{
