@@ -1,4 +1,4 @@
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/Portfolio" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -17,6 +17,26 @@ defaults:
       path: "_pages"
     values:
       permalink: /:basename:output_ext
+  - scope:
+      path: "assets/images/portfolio/HomeTown"
+    values:
+      HomeTown: true
+  - scope:
+      path: "assets/images/portfolio/ConsoleGraphics"
+    values:
+      ConsoleGraphics: true
+  - scope:
+      path: "assets/images/portfolio/Screensavers"
+    values:
+      Screensavers: true
+  - scope:
+      path: "assets/images/portfolio/TheHuntForZelandia"
+    values:
+      TheHuntForZelandia: true
+collections:
+  projects:
+    output: true
+
 
 include:
   - _pages
