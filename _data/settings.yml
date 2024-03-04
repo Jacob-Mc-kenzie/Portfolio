@@ -105,14 +105,14 @@ experience:
   - {
       name: Secretary,
       icon: "icon-2.png",
-      date: "Oct 2022 - Present",
+      date: "Oct 2022 - Dec 2023",
       organization: "QUT Anime And Manga",
     }
   - {
-      name: IT Manager,
+      name: IT Project Consultant,
       icon: "icon-3.png",
-      date: "Sep 2019 - Present",
-      organization: "Ipswich Metal Recycling",
+      date: "Jan 2023 - Dec 2023",
+      organization: "QUT Reasearch & Metro North",
     }
 
 #-------------------------------
@@ -121,7 +121,7 @@ experience:
 education-title: Education
 education:
   - {
-      name: Bachelor of IT (Computer Science) Distinction,
+      name: Bachelor of IT (Computer Science),
       date: "2021",
       organization: "Queensland University Of Technology (QUT)",
     }
@@ -132,14 +132,10 @@ education:
     }
   - {
       name: Bachelor of Games & Interactive Systems (software),
-      date: "2023 (expected)",
+      date: "2023",
       organization: "Queensland University Of Technology (QUT)",
     }
-  - {
-      name: Certificate of Education,
-      date: "2017",
-      organization: "Bremer state High School",
-    }
+
 
 #-------------------------------
 # Services Section
